@@ -19,7 +19,7 @@ def check_combinations(x, y, z, side):
     return True
 
 def validate_point(x, y, z, side):
-    if x < 0 or y < 0 or z < 0 or x > side or y > side or z > side or (x or y or z != side or 0):
+    if x < 0 or y < 0 or z < 0 or x > side or y > side or z > side or (x != side and y != side and z != side and x != 0 and y != 0 and z != 0):
         print(f"ERROR VOLE: Bod ({x}, {y}, {z}) není na stěně krychle.")
         return False
 
